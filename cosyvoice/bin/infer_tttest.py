@@ -43,7 +43,7 @@ def get_args():
                         help='gpu id for this rank, -1 for cpu')
     parser.add_argument('--mode',
                         default='sft',
-                        choices=['sft', 'zero_shot', 'tttest'],
+                        choices=['sft', 'zero_shot'],
                         help='inference mode')
     parser.add_argument('--result_dir', required=True, help='asr result file')
     args = parser.parse_args()
@@ -88,41 +88,19 @@ def main():
             utts = batch["utts"]
             assert len(utts) == 1, "inference mode only support batchsize 1"
             text_token = batch["text_token"].to(device)
-            print("text_tokentext_tokentext_token: ", text_token, text_token.shape)
             text_token_len = batch["text_token_len"].to(device)
-            print("text_token_lentext_token_len: ", text_token_len)
             tts_index = batch["tts_index"]
-            print("tts_indextts_indextts_index: ", tts_index)
             tts_text_token = batch["tts_text_token"].to(device)
-            print("tts_text_tokentts_text_token: ", tts_text_token, tts_text_token.shape)
             tts_text_token_len = batch["tts_text_token_len"].to(device)
-            print("tts_text_token_lentts_text_token_len: ", tts_text_token_len)
             speech_token = batch["speech_token"].to(device)
-            print("speech_tokenspeech_tokenspeech_token: ", speech_token, speech_token.shape)
             speech_token_len = batch["speech_token_len"].to(device)
-            print("speech_token_lenspeech_token_len: ", speech_token_len)
             speech_feat = batch["speech_feat"].to(device)
-            print("speech_featspeech_feat: ", speech_feat, speech_feat.shape)
             speech_feat_len = batch["speech_feat_len"].to(device)
-            print("speech_feat_lenspeech_feat_len: ", speech_feat_len)
             utt_embedding = batch["utt_embedding"].to(device)
-            print("utt_embeddingutt_embedding: ", utt_embedding, utt_embedding.shape)
             spk_embedding = batch["spk_embedding"].to(device)
-            print("spk_embeddingspk_embedding: ", spk_embedding, spk_embedding.shape)
-            
             if args.mode == 'sft':
                 model_input = {'text': tts_text_token, 'text_len': tts_text_token_len,
                                'llm_embedding': spk_embedding, 'flow_embedding': spk_embedding}
-                
-            elif args.mode == 'tttest':
-                model_input = {'text': tts_text_token, 'text_len': tts_text_token_len,
-                               'prompt_text': text_token, 'prompt_text_len': text_token_len,
-                               'llm_prompt_speech_token': speech_token, 'llm_prompt_speech_token_len': speech_token_len,
-                               'flow_prompt_speech_token': speech_token, 'flow_prompt_speech_token_len': speech_token_len,
-                               'prompt_speech_feat': speech_feat, 'prompt_speech_feat_len': speech_feat_len,
-                               'llm_embedding': utt_embedding, 'flow_embedding': utt_embedding,
-                               'source_speech_token': speech_token}
-                
             else:
                 model_input = {'text': tts_text_token, 'text_len': tts_text_token_len,
                                'prompt_text': text_token, 'prompt_text_len': text_token_len,
