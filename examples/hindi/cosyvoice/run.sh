@@ -2,27 +2,21 @@
 # Copyright 2024 Alibaba Inc. All Rights Reserved.
 . ./path.sh || exit 1;
 
-stage=7
-stop_stage=7
+stage=5
+stop_stage=5
 
-# data_url=www.openslr.org/resources/60
-data_dir=/home/os/lym/cosyvoice/CosyVoice/dataset
+data_dir=/data/liangyunming/tts_20250618/CosyVoice/dataset/hindi/20250618
 pretrained_model_dir=../../../pretrained_models/CosyVoice-300M
 
-# if [ ${stage} -le -1 ] && [ ${stop_stage} -ge -1 ]; then
-#   echo "Data Download"
-#   for part in dev-clean test-clean dev-other test-other train-clean-100 train-clean-360 train-other-500; do
-#     local/download_and_untar.sh ${data_dir} ${data_url} ${part}
-#   done
-# fi
 
 if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
   echo "Data preparation, prepare wav.scp/text/utt2spk/spk2utt"
   for x in train dev test; do
     mkdir -p data/$x
-    python local/prepare_data.py --src_dir $data_dir/hindi/$x.list --des_dir data/$x
+    python local/prepare_data.py --src_dir $data_dir/$x.list --des_dir data/$x
   done
 fi
+
 
 if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
   for x in train dev test; do
@@ -32,6 +26,7 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
   done
 fi
 
+
 if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
   for x in train dev test; do
     echo "Extract discrete speech token, you will get utt2speech_token.pt in data/$x dir"
@@ -39,6 +34,7 @@ if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
       --onnx_path $pretrained_model_dir/speech_tokenizer_v1.onnx
   done
 fi
+
 
 if [ ${stage} -le 3 ] && [ ${stop_stage} -ge 3 ]; then
   echo "Prepare required parquet format data, you should have prepared wav.scp/text/utt2spk/spk2utt/utt2embedding.pt/spk2embedding.pt/utt2speech_token.pt"
@@ -51,8 +47,10 @@ if [ ${stage} -le 3 ] && [ ${stop_stage} -ge 3 ]; then
   done
 fi
 
+
 # inference
 if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
+  # python gen_tts_text.py
   echo "Run inference. Please make sure utt in tts_text is in prompt_data"
   # for mode in sft zero_shot tttest; do
   for mode in tttest; do
@@ -72,7 +70,7 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
 fi
 
 # train llm
-export CUDA_VISIBLE_DEVICES="0,1"
+export CUDA_VISIBLE_DEVICES="0,1,2,3"
 num_gpus=$(echo $CUDA_VISIBLE_DEVICES | awk -F "," '{print NF}')
 job_id=1986
 dist_backend="nccl"
@@ -97,8 +95,8 @@ if [ ${stage} -le 5 ] && [ ${stop_stage} -ge 5 ]; then
       --cv_data data/dev.data.list \
       --model $model \
       --checkpoint $pretrained_model_dir/$model.pt \
-      --model_dir `pwd`/exp_hi/cosyvoice/$model/$train_engine \
-      --tensorboard_dir `pwd`/tensorboard_hi/cosyvoice/$model/$train_engine \
+      --model_dir `pwd`/exp/cosyvoice/$model/$train_engine \
+      --tensorboard_dir `pwd`/tensorboard/cosyvoice/$model/$train_engine \
       --ddp.dist_backend $dist_backend \
       --num_workers ${num_workers} \
       --prefetch ${prefetch} \
@@ -114,11 +112,11 @@ average_num=5
 if [ ${stage} -le 6 ] && [ ${stop_stage} -ge 6 ]; then
   # for model in llm flow hifigan; do
   for model in llm; do
-    decode_checkpoint=`pwd`/exp_hi/cosyvoice/$model/$train_engine/${model}.pt
+    decode_checkpoint=`pwd`/exp/cosyvoice/$model/$train_engine/${model}.pt
     echo "do model average and final checkpoint is $decode_checkpoint"
     python cosyvoice/bin/average_model.py \
       --dst_model $decode_checkpoint \
-      --src_path `pwd`/exp_hi/cosyvoice/$model/$train_engine  \
+      --src_path `pwd`/exp/cosyvoice/$model/$train_engine  \
       --num ${average_num} \
       --val_best
   done

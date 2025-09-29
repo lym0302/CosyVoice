@@ -1,0 +1,144 @@
+{
+    "_id" : ObjectId("68a70238822a8192178f3b70"),
+    "user_id" : NumberLong(31854714),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-21/audio_68a6fee304ae9d000187bda2",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-21/audio_68a6fee304ae9d000187bda2-16k.wav"
+}
+{
+    "_id" : ObjectId("68ac7808c76435b3f8caa647"),
+    "user_id" : NumberLong(65794319),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-25/audio_68ac780404ae9d0001945dd5",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-25/audio_68ac780404ae9d0001945dd5-16k.wav"
+}
+{
+    "_id" : ObjectId("68ac036ac76435b3f8caa2d7"),
+    "user_id" : NumberLong(29091805),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-25/audio_68ac036804ae9d00019338c1",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-25/audio_68ac036804ae9d00019338c1-16k.wav"
+}
+{
+    "_id" : ObjectId("68ae775d52cfb97150526397"),
+    "user_id" : NumberLong(31163302),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-27/audio_68ae775a46b10e00010112ca",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-27/audio_68ae775a46b10e00010112ca-16k.wav"
+}
+{
+    "_id" : ObjectId("68ac1321dd87b1eee16e72e5"),
+    "user_id" : NumberLong(79734872),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-25/audio_68ac131f04ae9d0001935d4e",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-25/audio_68ac131f04ae9d0001935d4e-16k.wav"
+}
+{
+    "_id" : ObjectId("68afc5fbd48ea2b9ce81ff74"),
+    "user_id" : NumberLong(71721139),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afc5f946b10e000103f90b",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afc5f946b10e000103f90b-16k.wav"
+}
+{
+    "_id" : ObjectId("68afcdd9d48ea2b9ce81ffa5"),
+    "user_id" : NumberLong(40605238),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afcdd704ae9d00019bf6dd",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afcdd704ae9d00019bf6dd-16k.wav"
+}
+{
+    "_id" : ObjectId("68afd23deeefde37bc2a7c84"),
+    "user_id" : NumberLong(31036304),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afd23b46b10e00010412ad",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afd23b46b10e00010412ad-16k.wav"
+}
+{
+    "_id" : ObjectId("68afd8acd48ea2b9ce81fff2"),
+    "user_id" : NumberLong(38742632),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afd8aa46b10e0001041edf",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afd8aa46b10e0001041edf-16k.wav"
+}
+{
+    "_id" : ObjectId("68afe5aceeefde37bc2a7d1b"),
+    "user_id" : NumberLong(44956101),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afe5a904ae9d00019c31fd",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afe5a904ae9d00019c31fd-16k.wav"
+}
+{
+    "_id" : ObjectId("68afea9aeeefde37bc2a7d3e"),
+    "user_id" : NumberLong(24272317),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afea9704ae9d00019c40c9",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68afea9704ae9d00019c40c9-16k.wav"
+}
+{
+    "_id" : ObjectId("68aff115eeefde37bc2a7d68"),
+    "user_id" : NumberLong(64981538),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68aff11346b10e0001045713",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68aff11346b10e0001045713-16k.wav"
+}
+{
+    "_id" : ObjectId("68aff29bd48ea2b9ce8200af"),
+    "user_id" : NumberLong(37863166),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68aff29946b10e0001045a3f",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68aff29946b10e0001045a3f-16k.wav"
+}
+{
+    "_id" : ObjectId("68aff5bceeefde37bc2a7d95"),
+    "user_id" : NumberLong(42699499),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68aff5ba04ae9d00019c5e65",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68aff5ba04ae9d00019c5e65-16k.wav"
+}
+{
+    "_id" : ObjectId("68b0372dd48ea2b9ce8202c7"),
+    "user_id" : NumberLong(74490193),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b0372a46b10e000105084d",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b0372a46b10e000105084d-16k.wav"
+}
+{
+    "_id" : ObjectId("68b00f2fd48ea2b9ce820190"),
+    "user_id" : NumberLong(34435956),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b00f2d46b10e000104a720",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b00f2d46b10e000104a720-16k.wav"
+}
+{
+    "_id" : ObjectId("68b022f7eeefde37bc2a7efc"),
+    "user_id" : NumberLong(32651240),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b022f546b10e000104d6f7",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b022f546b10e000104d6f7-16k.wav"
+}
+{
+    "_id" : ObjectId("68b040ccd48ea2b9ce82030f"),
+    "user_id" : NumberLong(29364208),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b040c904ae9d00019d3f82",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b040c904ae9d00019d3f82-16k.wav"
+}
+{
+    "_id" : ObjectId("68b0766ad48ea2b9ce8204a0"),
+    "user_id" : NumberLong(66503535),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b0766846b10e000105a88e",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b0766846b10e000105a88e-16k.wav"
+}
+{
+    "_id" : ObjectId("68b086f2eeefde37bc2a821d"),
+    "user_id" : NumberLong(44076921),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b086f046b10e000105d88e",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-28/audio_68b086f046b10e000105d88e-16k.wav"
+}
+{
+    "_id" : ObjectId("68b1106feeefde37bc2a84ba"),
+    "user_id" : NumberLong(45688288),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-29/audio_68b1106d04ae9d00019f36a3",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-29/audio_68b1106d04ae9d00019f36a3-16k.wav"
+}
+{
+    "_id" : ObjectId("68b3cd01eeefde37bc2a95f9"),
+    "user_id" : NumberLong(32309552),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-31/audio_68b3ccfe46b10e00010d2ab5",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-31/audio_68b3ccfe46b10e00010d2ab5-16k.wav"
+}
+{
+    "_id" : ObjectId("68b40424d48ea2b9ce821a8f"),
+    "user_id" : NumberLong(60094868),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-31/audio_68b4041c46b10e00010dccde",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-31/audio_68b4041c46b10e00010dccde-16k.wav"
+}
+{
+    "_id" : ObjectId("68b45b40eeefde37bc2a9a6d"),
+    "user_id" : NumberLong(32487511),
+    "voice_url" : "https://static.funshareapp.com/audio/togo/2025-08-31/audio_68b45b3e46b10e00010ebe91",
+    "voice_16k_url" : "https://static.funshareapp.com/audio/togo/2025-08-31/audio_68b45b3e46b10e00010ebe91-16k.wav"
+}

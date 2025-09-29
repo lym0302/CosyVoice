@@ -62,9 +62,9 @@ class MaskedDiffWithXvec(torch.nn.Module):
             batch: dict,
             device: torch.device,
     ) -> Dict[str, Optional[torch.Tensor]]:
-        token = batch['speech_token'].to(device)
+        token = batch['speech_token'].to(device)  # [B, T_mel/2]
         token_len = batch['speech_token_len'].to(device)
-        feat = batch['speech_feat'].to(device)
+        feat = batch['speech_feat'].to(device)    #[B, T_mel, 80]
         feat_len = batch['speech_feat_len'].to(device)
         embedding = batch['embedding'].to(device)
 

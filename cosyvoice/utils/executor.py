@@ -21,7 +21,7 @@ import torch
 import torch.distributed as dist
 
 from cosyvoice.utils.train_utils import update_parameter_and_lr, log_per_step, log_per_save, batch_forward, batch_backward, save_model, cosyvoice_join
-
+from cosyvoice.utils.mask import make_pad_mask
 
 class Executor:
 
@@ -31,6 +31,10 @@ class Executor:
         self.epoch = 0
         self.rank = int(os.environ.get('RANK', 0))
         self.device = torch.device('cuda:{}'.format(self.rank))
+    
+    
+    def test_and_log_audio(self):
+        pass
 
     def train_one_epoc(self, model, optimizer, scheduler, train_data_loader, cv_data_loader, writer, info_dict, scaler, group_join):
         ''' Train one epoch
@@ -79,7 +83,8 @@ class Executor:
                 if (batch_idx + 1) % info_dict["accum_grad"] == 0:
                     self.step += 1
         dist.barrier()
-        self.cv(model, cv_data_loader, writer, info_dict, on_batch_end=True)
+        save_model_path = self.cv(model, cv_data_loader, writer, info_dict, on_batch_end=True)
+        return save_model_path
 
     def train_one_epoc_gan(self, model, optimizer, scheduler, optimizer_d, scheduler_d, train_data_loader, cv_data_loader,
                            writer, info_dict, scaler, group_join):
@@ -169,4 +174,141 @@ class Executor:
         info_dict['loss_dict'] = total_loss_dict
         log_per_save(writer, info_dict)
         model_name = 'epoch_{}_whole'.format(self.epoch) if on_batch_end else 'epoch_{}_step_{}'.format(self.epoch, self.step + 1)
-        save_model(model, model_name, info_dict)
+        save_model_path = save_model(model, model_name, info_dict)
+        return save_model_path
+
+
+
+class PitchPredictorExecutor(Executor):
+    """专门用于PitchPredictor训练的执行器"""
+    
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        
+    def compute_pitch_loss(self, model, batch):
+        """计算pitch预测损失"""
+        target_pitch = batch.get('pitch_feat').to(self.device)  # [B, speech_len]
+        pitch_feat_len = batch.get('pitch_feat_len').to(self.device)
+        predicted_pitch = model(batch, self.device)
+        mask = ~make_pad_mask(pitch_feat_len).to(self.device)  # True = 有效位置
+        predicted_pitch_masked = predicted_pitch[mask]     # 1D, 所有有效位置
+        target_pitch_masked = target_pitch[mask]           # 1D
+
+        loss = torch.nn.functional.l1_loss(predicted_pitch_masked, target_pitch_masked)
+        
+        return {
+            'loss': loss,
+            'predicted_pitch': predicted_pitch,
+            'target_pitch': target_pitch
+        }
+    
+    def train_one_epoc_pitch(self, model, optimizer, scheduler, train_data_loader, 
+                           cv_data_loader, writer, info_dict, scaler, group_join):
+        """训练一个epoch"""
+        model.train()
+        total_loss = 0.0
+        num_seen_utts = 0
+        
+        for batch_idx, batch in enumerate(train_data_loader):
+            utts = batch.get('utts', ['unknown'])
+            num_utts = len(utts)
+            num_seen_utts += num_utts
+            
+            optimizer.zero_grad()
+            
+            try:
+                # 计算损失
+                result = self.compute_pitch_loss(model, batch)
+                loss = result['loss'].float()
+                print(f"loss: {loss}")
+                
+                # 反向传播
+                if scaler is not None:
+                    scaler.scale(loss).backward()
+                    scaler.step(optimizer)
+                    scaler.update()
+                else:
+                    loss.backward()
+                    optimizer.step()
+                
+                if scheduler is not None:
+                    scheduler.step()
+                
+                # 累积统计
+                total_loss += loss.item() * num_utts
+                
+                # 记录日志
+                if batch_idx % 100 == 0:
+                    lr = optimizer.param_groups[0]['lr']
+                    log_str = f'TRAIN Batch {batch_idx}, Loss: {loss.item():.6f}, LR: {lr:.2e}'
+                    logging.info(log_str)
+                    
+                    if writer is not None:
+                        writer.add_scalar('train/loss', loss.item(), self.step)
+                        writer.add_scalar('train/lr', lr, self.step)
+                
+                self.step += 1
+                
+            except Exception as e:
+                logging.error(f'训练批次 {batch_idx} 出错: {str(e)}')
+                continue
+        
+        # Epoch结束统计
+        avg_loss = total_loss / max(num_seen_utts, 1)
+        
+        # 验证
+        if cv_data_loader is not None:
+            logging.info("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+            val_loss = self.validate_pitch(model, cv_data_loader)
+            logging.info("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb")
+            logging.info(f'EPOCH {self.epoch} - Train Loss: {avg_loss:.6f}, Val Loss: {val_loss:.6f}')
+            
+            if writer is not None:
+                writer.add_scalar('epoch/train_loss', avg_loss, self.epoch)
+                writer.add_scalar('epoch/val_loss', val_loss, self.epoch)
+        else:
+            logging.info(f'EPOCH {self.epoch} - Train Loss: {avg_loss:.6f}')
+            
+            if writer is not None:
+                writer.add_scalar('epoch/train_loss', avg_loss, self.epoch)
+        
+        # 保存检查点
+        if self.epoch % info_dict.get('save_interval', 1) == 0:
+            save_dict = {
+                'model': model.state_dict() if hasattr(model, 'state_dict') else model.module.state_dict(),
+                'optimizer': optimizer.state_dict(),
+                'scheduler': scheduler.state_dict() if scheduler is not None else None,
+                'step': self.step,
+                'epoch': self.epoch,
+                'loss': avg_loss,
+            }
+            save_path = os.path.join(info_dict['model_dir'], f'pitch_predictor_epoch_{self.epoch}.pt')
+            torch.save(save_dict, save_path)
+            logging.info(f'模型已保存至: {save_path}')
+    
+    def validate_pitch(self, model, cv_data_loader):
+        """验证模型"""
+        model.eval()
+        total_loss = 0.0
+        num_seen_utts = 0
+        
+        with torch.no_grad():
+            for batch in cv_data_loader:
+                utts = batch.get('utts', ['unknown'])
+                num_utts = len(utts)
+                num_seen_utts += num_utts
+                
+                try:
+                    result = self.compute_pitch_loss(model, batch)
+                    loss = result['loss']
+                    
+                    total_loss += loss.item() * num_utts
+                    
+                except Exception as e:
+                    logging.error(f'验证批次出错: {str(e)}')
+                    continue
+        
+        avg_loss = total_loss / max(num_seen_utts, 1)
+        
+        model.train()
+        return avg_loss

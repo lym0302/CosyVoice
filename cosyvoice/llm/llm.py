@@ -261,15 +261,15 @@ class Qwen2Encoder(torch.nn.Module):
 
 class Qwen2LM(TransformerLM):
     def __init__(
-            self,
-            llm_input_size: int,
-            llm_output_size: int,
-            speech_token_size: int,
-            llm: torch.nn.Module,
-            sampling: Callable,
-            length_normalized_loss: bool = True,
-            lsm_weight: float = 0.0,
-            mix_ratio: List[int] = [5, 15],
+        self,
+        llm_input_size: int,
+        llm_output_size: int,
+        speech_token_size: int,
+        llm: torch.nn.Module,
+        sampling: Callable,
+        length_normalized_loss: bool = True,
+        lsm_weight: float = 0.0,
+        mix_ratio: List[int] = [5, 15],
     ):
         torch.nn.Module.__init__(self)
         self.llm_input_size = llm_input_size
@@ -301,6 +301,7 @@ class Qwen2LM(TransformerLM):
         self.stop_token_ids = [speech_token_size + i for i in range(3)]
         self.vllm_output_queue = {}
         self.lock = threading.Lock()
+        
 
     def prepare_lm_input_target(self, text_token, text_token_emb, text_token_len, speech_token, speech_token_emb, speech_token_len):
         lm_target, lm_input = [], []
@@ -343,6 +344,28 @@ class Qwen2LM(TransformerLM):
         lm_input = pad_sequence(lm_input, batch_first=True, padding_value=IGNORE_ID)
         lm_target = pad_sequence(lm_target, batch_first=True, padding_value=IGNORE_ID)
         return lm_target, lm_input, lm_input_len
+    
+    
+    def get_emb(
+            self,
+            batch: dict,
+            device: torch.device,):
+        """
+        Args:
+            text: (B, L, D)
+            text_lengths: (B,)
+            audio: (B, T, N) or (B, T)
+            audio_lengths: (B,)
+        """
+        text_token = batch['text_token'].to(device)
+        speech_token = batch['speech_token'].to(device)
+
+        text_token_emb = self.llm.model.model.embed_tokens(text_token)
+        speech_token_emb = self.speech_embedding(speech_token) # shape [B, T, 896]
+        
+        return text_token_emb, speech_token_emb 
+        
+        
 
     def forward(
             self,
@@ -563,3 +586,5 @@ class Qwen2LM(TransformerLM):
             # in stream mode, yield token one by one
             yield top_ids
             lm_input = self.speech_embedding.weight[top_ids].reshape(1, 1, -1)
+
+

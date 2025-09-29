@@ -4,13 +4,15 @@ from vllm import ModelRegistry
 from cosyvoice.vllm.cosyvoice2 import CosyVoice2ForCausalLM
 ModelRegistry.register_model("CosyVoice2ForCausalLM", CosyVoice2ForCausalLM)
 
+print("1111111111111111111111111111")
 from cosyvoice.cli.cosyvoice import CosyVoice2
 from cosyvoice.utils.file_utils import load_wav
 from cosyvoice.utils.common import set_all_random_seed
 from tqdm import tqdm
-
+print("22222222222222222222222222222222222")
 def main():
     cosyvoice = CosyVoice2('pretrained_models/CosyVoice2-0.5B', load_jit=True, load_trt=True, load_vllm=True, fp16=True)
+    print("333333333333333333333333333333333333333")
     prompt_speech_16k = load_wav('./asset/zero_shot_prompt.wav', 16000)
     for i in tqdm(range(100)):
         set_all_random_seed(i)

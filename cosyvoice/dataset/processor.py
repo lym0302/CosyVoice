@@ -21,6 +21,7 @@ import torchaudio
 from torch.nn.utils.rnn import pad_sequence
 import torch.nn.functional as F
 import pyworld as pw
+import os
 
 
 AUDIO_FORMAT_SETS = {'flac', 'mp3', 'm4a', 'ogg', 'opus', 'wav', 'wma'}
@@ -209,6 +210,24 @@ def compute_f0(data, sample_rate, hop_size, mode='train'):
         sample['pitch_feat'] = f0
         yield sample
 
+import  numpy as np
+def get_f0(data, f0_dir, mode='train'):
+    for sample in data:
+        assert 'utt' in sample
+        assert 'speech_feat' in sample
+        f0_path = f'{f0_dir}/{sample["utt"]}.npy'
+        if not os.path.exists(f0_path):
+            logging.warning(f'F0 file {f0_path} does not exist, skipping sample {sample["utt"]}')
+            continue
+        try:
+            f0 = np.load(f0_path)
+        except (EOFError, ValueError) as e:
+            logging.warning(f"Failed to load F0 file {f0_path}: {e}, skipping")
+            continue
+        f0 = F.interpolate(torch.from_numpy(f0).view(1, 1, -1), size=sample['speech_feat'].shape[0], mode='linear').view(-1)
+        sample['pitch_feat'] = f0
+        yield sample
+        
 
 def parse_embedding(data, normalize, mode='train'):
     """ Parse utt_embedding/spk_embedding
@@ -424,6 +443,89 @@ def padding(data, use_spk_embedding, mode='train', gan=False):
             # only gan train needs speech, delete it to save memory
             del batch["speech"]
             del batch["speech_len"]
+        if mode == 'inference':
+            tts_text = [sample[i]['tts_text'] for i in order]
+            tts_index = [sample[i]['tts_index'] for i in order]
+            tts_text_token = [torch.tensor(sample[i]['tts_text_token']) for i in order]
+            tts_text_token_len = torch.tensor([i.size(0) for i in tts_text_token], dtype=torch.int32)
+            tts_text_token = pad_sequence(tts_text_token, batch_first=True, padding_value=-1)
+            batch.update({'tts_text': tts_text,
+                          'tts_index': tts_index,
+                          'tts_text_token': tts_text_token,
+                          'tts_text_token_len': tts_text_token_len})
+        if use_spk_embedding is True:
+            batch["embedding"] = batch["spk_embedding"]
+        else:
+            batch["embedding"] = batch["utt_embedding"]
+        yield batch
+        
+
+def padding_add_pitch(data, use_spk_embedding, mode='train'):
+    """ Padding the data into training data
+
+        Args:
+            data: Iterable[List[{key, feat, label}]]
+
+        Returns:
+            Iterable[Tuple(keys, feats, labels, feats lengths, label lengths)]
+    """
+    for sample in data:
+        assert isinstance(sample, list)
+        speech_feat_len = torch.tensor([x['speech_feat'].size(1) for x in sample],
+                                       dtype=torch.int32)
+        order = torch.argsort(speech_feat_len, descending=True)
+
+        utts = [sample[i]['utt'] for i in order]
+        speech = [sample[i]['speech'].squeeze(dim=0) for i in order]
+        speech_len = torch.tensor([i.size(0) for i in speech], dtype=torch.int32)
+        speech = pad_sequence(speech, batch_first=True, padding_value=0)
+        speech_token = [torch.tensor(sample[i]['speech_token']) for i in order]
+        speech_token_len = torch.tensor([i.size(0) for i in speech_token], dtype=torch.int32)
+        speech_token = pad_sequence(speech_token,
+                                    batch_first=True,
+                                    padding_value=0)
+        speech_feat = [sample[i]['speech_feat'] for i in order]
+        speech_feat_len = torch.tensor([i.size(0) for i in speech_feat], dtype=torch.int32)
+        speech_feat = pad_sequence(speech_feat,
+                                   batch_first=True,
+                                   padding_value=0)
+        text = [sample[i]['text'] for i in order]
+        text_token = [torch.tensor(sample[i]['text_token']) for i in order]
+        text_token_len = torch.tensor([i.size(0) for i in text_token], dtype=torch.int32)
+        text_token = pad_sequence(text_token, batch_first=True, padding_value=0)
+        utt_embedding = torch.stack([sample[i]['utt_embedding'] for i in order], dim=0)
+        spk_embedding = torch.stack([sample[i]['spk_embedding'] for i in order], dim=0)
+        batch = {
+            "utts": utts,
+            "speech": speech,
+            "speech_len": speech_len,
+            "speech_token": speech_token,
+            "speech_token_len": speech_token_len,
+            "speech_feat": speech_feat,
+            "speech_feat_len": speech_feat_len,
+            "text": text,
+            "text_token": text_token,
+            "text_token_len": text_token_len,
+            "utt_embedding": utt_embedding,
+            "spk_embedding": spk_embedding,
+        }
+
+        pitch_feat = [sample[i]['pitch_feat'] for i in order]
+        pitch_feat_len = torch.tensor([i.size(0) for i in pitch_feat], dtype=torch.int32)
+        pitch_feat = pad_sequence(pitch_feat,
+                                    batch_first=True,
+                                    padding_value=0)
+        batch["pitch_feat"] = pitch_feat
+        batch["pitch_feat_len"] = pitch_feat_len
+        
+        # print("111111111111111111111111: ", batch["pitch_feat"].shape)
+        # print("222222222222222222222222: ", batch["speech_token"].shape)
+        # print("333333333333333333333333: ", batch["speech_feat"].shape)
+        
+        # only gan train needs speech, delete it to save memory
+        del batch["speech"]
+        del batch["speech_len"]
+        
         if mode == 'inference':
             tts_text = [sample[i]['tts_text'] for i in order]
             tts_index = [sample[i]['tts_index'] for i in order]

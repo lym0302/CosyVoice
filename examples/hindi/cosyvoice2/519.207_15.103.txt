@@ -1,0 +1,2576 @@
+{
+    "source": "https://s3.ap-south-1.amazonaws.com/lc.tmp/valid/Hindi-ylbYEQg1PHs/speaker_0/519.207_15.103.wav",
+    "timestamp": "2025-09-03T04:10:43Z",
+    "durationInTicks": 151030000,
+    "durationMilliseconds": 15103,
+    "duration": "PT15.103S",
+    "combinedRecognizedPhrases": [
+        {
+            "channel": 0,
+            "lexical": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+            "itn": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+            "maskedITN": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है। संसद में विपक्ष ने इस बार चर्चा की मांग की है। रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है।",
+            "display": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है। संसद में विपक्ष ने इस बार चर्चा की मांग की है। रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है।"
+        }
+    ],
+    "recognizedPhrases": [
+        {
+            "recognitionStatus": "Success",
+            "channel": 0,
+            "offset": "PT0.24S",
+            "duration": "PT14.56S",
+            "offsetInTicks": 2400000.0,
+            "durationInTicks": 145600000.0,
+            "durationMilliseconds": 14560,
+            "offsetMilliseconds": 240,
+            "nBest": [
+                {
+                    "confidence": 0.73252225,
+                    "lexical": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "itn": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "maskedITN": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है। संसद में विपक्ष ने इस बार चर्चा की मांग की है। रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है।",
+                    "display": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है। संसद में विपक्ष ने इस बार चर्चा की मांग की है। रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है।",
+                    "words": [
+                        {
+                            "word": "हिंडेनबर्ग",
+                            "offset": "PT0.24S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 2400000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 240,
+                            "confidence": 0.19898187
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT0.76S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 7600000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 760,
+                            "confidence": 0.8875751
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT1.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 12400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 1240,
+                            "confidence": 0.9401711
+                        },
+                        {
+                            "word": "देशभर",
+                            "offset": "PT1.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 15200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 1520,
+                            "confidence": 0.45925325
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT2.04S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 20400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 2040,
+                            "confidence": 0.96292835
+                        },
+                        {
+                            "word": "सबको",
+                            "offset": "PT2.2S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 22000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 2200,
+                            "confidence": 0.50736845
+                        },
+                        {
+                            "word": "सकते",
+                            "offset": "PT2.68S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 26800000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 2680,
+                            "confidence": 0.12110494
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT3.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 31200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 3120,
+                            "confidence": 0.45510843
+                        },
+                        {
+                            "word": "ला",
+                            "offset": "PT3.24S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 32400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 3240,
+                            "confidence": 0.24384397
+                        },
+                        {
+                            "word": "दिया",
+                            "offset": "PT3.4S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 34000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3400,
+                            "confidence": 0.72264457
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT3.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 36000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3600,
+                            "confidence": 0.9026943
+                        },
+                        {
+                            "word": "संसद",
+                            "offset": "PT3.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 38000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 3800,
+                            "confidence": 0.85664266
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT4.28S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 42800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 4280,
+                            "confidence": 0.9571393
+                        },
+                        {
+                            "word": "विपक्ष",
+                            "offset": "PT4.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 45200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 4520,
+                            "confidence": 0.9335995
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT5.04S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 50400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 5040,
+                            "confidence": 0.90152955
+                        },
+                        {
+                            "word": "इस",
+                            "offset": "PT5.32S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 53200000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 5320,
+                            "confidence": 0.9271139
+                        },
+                        {
+                            "word": "बार",
+                            "offset": "PT5.52S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 55200000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 5520,
+                            "confidence": 0.9249308
+                        },
+                        {
+                            "word": "चर्चा",
+                            "offset": "PT5.84S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 58400000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 5840,
+                            "confidence": 0.8896338
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.2S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 62000000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 6200,
+                            "confidence": 0.9272267
+                        },
+                        {
+                            "word": "मांग",
+                            "offset": "PT6.32S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 63200000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 6320,
+                            "confidence": 0.94526917
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.56S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 65600000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6560,
+                            "confidence": 0.70272326
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT6.72S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 67200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6720,
+                            "confidence": 0.8765055
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT6.96S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 69600000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 6960,
+                            "confidence": 0.94771904
+                        },
+                        {
+                            "word": "आने",
+                            "offset": "PT7.4S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 74000000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7400,
+                            "confidence": 0.9445933
+                        },
+                        {
+                            "word": "के",
+                            "offset": "PT7.64S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 76400000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 7640,
+                            "confidence": 0.95822847
+                        },
+                        {
+                            "word": "बाद",
+                            "offset": "PT7.76S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 77600000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7760,
+                            "confidence": 0.96251476
+                        },
+                        {
+                            "word": "गौतम",
+                            "offset": "PT8S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 80000000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 8000,
+                            "confidence": 0.7972255
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT8.36S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 83600000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 8360,
+                            "confidence": 0.4127492
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT8.68S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 86800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 8680,
+                            "confidence": 0.82374215
+                        },
+                        {
+                            "word": "कंपनी",
+                            "offset": "PT8.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 88000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 8800,
+                            "confidence": 0.7819129
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT9.28S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 92800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 9280,
+                            "confidence": 0.46547678
+                        },
+                        {
+                            "word": "इंटरप्राइसेस",
+                            "offset": "PT9.68S",
+                            "duration": "PT0.72S",
+                            "offsetInTicks": 96800000.0,
+                            "durationInTicks": 7200000.0,
+                            "durationMilliseconds": 720,
+                            "offsetMilliseconds": 9680,
+                            "confidence": 0.67677563
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT10.4S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 104000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 10400,
+                            "confidence": 0.8628114
+                        },
+                        {
+                            "word": "ऐफ़",
+                            "offset": "PT10.68S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 106800000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 10680,
+                            "confidence": 0.4645612
+                        },
+                        {
+                            "word": "पी",
+                            "offset": "PT10.88S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 108800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 10880,
+                            "confidence": 0.53038394
+                        },
+                        {
+                            "word": "ओह",
+                            "offset": "PT11.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 111200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 11120,
+                            "confidence": 0.34671077
+                        },
+                        {
+                            "word": "यानी",
+                            "offset": "PT11.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 112400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 11240,
+                            "confidence": 0.56586754
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT11.52S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 115200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 11520,
+                            "confidence": 0.1674413
+                        },
+                        {
+                            "word": "फॉलो",
+                            "offset": "PT11.68S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 116800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 11680,
+                            "confidence": 0.31681758
+                        },
+                        {
+                            "word": "ऑन",
+                            "offset": "PT12.08S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 120800000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 12080,
+                            "confidence": 0.44858098
+                        },
+                        {
+                            "word": "पब्लिक",
+                            "offset": "PT12.24S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 122400000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 12240,
+                            "confidence": 0.81525826
+                        },
+                        {
+                            "word": "ऑफर",
+                            "offset": "PT12.68S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 126800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 12680,
+                            "confidence": 0.8433938
+                        },
+                        {
+                            "word": "को",
+                            "offset": "PT13S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 130000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13000,
+                            "confidence": 0.95405525
+                        },
+                        {
+                            "word": "कॉल",
+                            "offset": "PT13.28S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 132800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 13280,
+                            "confidence": 0.94257647
+                        },
+                        {
+                            "word": "ऑफ",
+                            "offset": "PT13.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 136000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 13600,
+                            "confidence": 0.89401853
+                        },
+                        {
+                            "word": "करने",
+                            "offset": "PT13.8S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 138000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13800,
+                            "confidence": 0.9512204
+                        },
+                        {
+                            "word": "का",
+                            "offset": "PT14.08S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 140800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 14080,
+                            "confidence": 0.9192575
+                        },
+                        {
+                            "word": "निर्णय",
+                            "offset": "PT14.2S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 142000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 14200,
+                            "confidence": 0.8825117
+                        },
+                        {
+                            "word": "लिया",
+                            "offset": "PT14.48S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 144800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 14480,
+                            "confidence": 0.8949593
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT14.72S",
+                            "duration": "PT0.08S",
+                            "offsetInTicks": 147200000.0,
+                            "durationInTicks": 800000.0,
+                            "durationMilliseconds": 80,
+                            "offsetMilliseconds": 14720,
+                            "confidence": 0.8107613
+                        }
+                    ]
+                },
+                {
+                    "confidence": 0.7314673,
+                    "lexical": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी कि फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "itn": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी कि फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "maskedITN": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी कि फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "display": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी कि फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "words": [
+                        {
+                            "word": "हिंडेनबर्ग",
+                            "offset": "PT0.24S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 2400000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 240,
+                            "confidence": 0.19898187
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT0.76S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 7600000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 760,
+                            "confidence": 0.8875751
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT1.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 12400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 1240,
+                            "confidence": 0.9401711
+                        },
+                        {
+                            "word": "देशभर",
+                            "offset": "PT1.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 15200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 1520,
+                            "confidence": 0.45925325
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT2.04S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 20400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 2040,
+                            "confidence": 0.96292835
+                        },
+                        {
+                            "word": "सबको",
+                            "offset": "PT2.2S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 22000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 2200,
+                            "confidence": 0.50736845
+                        },
+                        {
+                            "word": "सकते",
+                            "offset": "PT2.68S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 26800000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 2680,
+                            "confidence": 0.12110494
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT3.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 31200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 3120,
+                            "confidence": 0.45510843
+                        },
+                        {
+                            "word": "ला",
+                            "offset": "PT3.24S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 32400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 3240,
+                            "confidence": 0.24384397
+                        },
+                        {
+                            "word": "दिया",
+                            "offset": "PT3.4S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 34000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3400,
+                            "confidence": 0.72264457
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT3.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 36000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3600,
+                            "confidence": 0.9026943
+                        },
+                        {
+                            "word": "संसद",
+                            "offset": "PT3.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 38000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 3800,
+                            "confidence": 0.85664266
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT4.28S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 42800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 4280,
+                            "confidence": 0.9571393
+                        },
+                        {
+                            "word": "विपक्ष",
+                            "offset": "PT4.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 45200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 4520,
+                            "confidence": 0.9335995
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT5.04S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 50400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 5040,
+                            "confidence": 0.90152955
+                        },
+                        {
+                            "word": "इस",
+                            "offset": "PT5.32S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 53200000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 5320,
+                            "confidence": 0.9271139
+                        },
+                        {
+                            "word": "बार",
+                            "offset": "PT5.52S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 55200000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 5520,
+                            "confidence": 0.9249308
+                        },
+                        {
+                            "word": "चर्चा",
+                            "offset": "PT5.84S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 58400000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 5840,
+                            "confidence": 0.8896338
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.2S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 62000000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 6200,
+                            "confidence": 0.9272267
+                        },
+                        {
+                            "word": "मांग",
+                            "offset": "PT6.32S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 63200000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 6320,
+                            "confidence": 0.94526917
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.56S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 65600000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6560,
+                            "confidence": 0.70272326
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT6.72S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 67200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6720,
+                            "confidence": 0.8765055
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT6.96S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 69600000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 6960,
+                            "confidence": 0.94771904
+                        },
+                        {
+                            "word": "आने",
+                            "offset": "PT7.4S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 74000000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7400,
+                            "confidence": 0.9445933
+                        },
+                        {
+                            "word": "के",
+                            "offset": "PT7.64S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 76400000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 7640,
+                            "confidence": 0.95822847
+                        },
+                        {
+                            "word": "बाद",
+                            "offset": "PT7.76S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 77600000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7760,
+                            "confidence": 0.96251476
+                        },
+                        {
+                            "word": "गौतम",
+                            "offset": "PT8S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 80000000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 8000,
+                            "confidence": 0.7972255
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT8.36S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 83600000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 8360,
+                            "confidence": 0.4127492
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT8.68S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 86800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 8680,
+                            "confidence": 0.82374215
+                        },
+                        {
+                            "word": "कंपनी",
+                            "offset": "PT8.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 88000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 8800,
+                            "confidence": 0.7819129
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT9.28S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 92800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 9280,
+                            "confidence": 0.46547678
+                        },
+                        {
+                            "word": "इंटरप्राइसेस",
+                            "offset": "PT9.68S",
+                            "duration": "PT0.72S",
+                            "offsetInTicks": 96800000.0,
+                            "durationInTicks": 7200000.0,
+                            "durationMilliseconds": 720,
+                            "offsetMilliseconds": 9680,
+                            "confidence": 0.67677563
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT10.4S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 104000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 10400,
+                            "confidence": 0.8628114
+                        },
+                        {
+                            "word": "ऐफ़",
+                            "offset": "PT10.68S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 106800000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 10680,
+                            "confidence": 0.4645612
+                        },
+                        {
+                            "word": "पी",
+                            "offset": "PT10.88S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 108800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 10880,
+                            "confidence": 0.53038394
+                        },
+                        {
+                            "word": "ओह",
+                            "offset": "PT11.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 111200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 11120,
+                            "confidence": 0.34671077
+                        },
+                        {
+                            "word": "यानी",
+                            "offset": "PT11.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 112400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 11240,
+                            "confidence": 0.56586754
+                        },
+                        {
+                            "word": "कि",
+                            "offset": "PT11.52S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 115200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 11520,
+                            "confidence": 0.12058689
+                        },
+                        {
+                            "word": "फॉलो",
+                            "offset": "PT11.68S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 116800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 11680,
+                            "confidence": 0.25254548
+                        },
+                        {
+                            "word": "ऑन",
+                            "offset": "PT12.08S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 120800000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 12080,
+                            "confidence": 0.48386642
+                        },
+                        {
+                            "word": "पब्लिक",
+                            "offset": "PT12.24S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 122400000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 12240,
+                            "confidence": 0.82734615
+                        },
+                        {
+                            "word": "ऑफर",
+                            "offset": "PT12.68S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 126800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 12680,
+                            "confidence": 0.84136033
+                        },
+                        {
+                            "word": "को",
+                            "offset": "PT13S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 130000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13000,
+                            "confidence": 0.95480615
+                        },
+                        {
+                            "word": "कॉल",
+                            "offset": "PT13.28S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 132800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 13280,
+                            "confidence": 0.94438803
+                        },
+                        {
+                            "word": "ऑफ",
+                            "offset": "PT13.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 136000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 13600,
+                            "confidence": 0.8957277
+                        },
+                        {
+                            "word": "करने",
+                            "offset": "PT13.8S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 138000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13800,
+                            "confidence": 0.9521404
+                        },
+                        {
+                            "word": "का",
+                            "offset": "PT14.08S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 140800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 14080,
+                            "confidence": 0.9100621
+                        },
+                        {
+                            "word": "निर्णय",
+                            "offset": "PT14.2S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 142000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 14200,
+                            "confidence": 0.88716066
+                        },
+                        {
+                            "word": "लिया",
+                            "offset": "PT14.48S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 144800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 14480,
+                            "confidence": 0.89927757
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT14.72S",
+                            "duration": "PT0.08S",
+                            "offsetInTicks": 147200000.0,
+                            "durationInTicks": 800000.0,
+                            "durationMilliseconds": 80,
+                            "offsetMilliseconds": 14720,
+                            "confidence": 0.8188408
+                        }
+                    ]
+                },
+                {
+                    "confidence": 0.73065716,
+                    "lexical": "हिंडनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "itn": "हिंडनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "maskedITN": "हिंडनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "display": "हिंडनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "words": [
+                        {
+                            "word": "हिंडनबर्ग",
+                            "offset": "PT0.24S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 2400000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 240,
+                            "confidence": 0.15249626
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT0.76S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 7600000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 760,
+                            "confidence": 0.8851203
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT1.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 12400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 1240,
+                            "confidence": 0.93827224
+                        },
+                        {
+                            "word": "देशभर",
+                            "offset": "PT1.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 15200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 1520,
+                            "confidence": 0.47232372
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT2.04S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 20400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 2040,
+                            "confidence": 0.9623506
+                        },
+                        {
+                            "word": "सबको",
+                            "offset": "PT2.2S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 22000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 2200,
+                            "confidence": 0.50143856
+                        },
+                        {
+                            "word": "सकते",
+                            "offset": "PT2.68S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 26800000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 2680,
+                            "confidence": 0.12076017
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT3.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 31200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 3120,
+                            "confidence": 0.46212104
+                        },
+                        {
+                            "word": "ला",
+                            "offset": "PT3.24S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 32400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 3240,
+                            "confidence": 0.22001514
+                        },
+                        {
+                            "word": "दिया",
+                            "offset": "PT3.4S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 34000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3400,
+                            "confidence": 0.72484446
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT3.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 36000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3600,
+                            "confidence": 0.9025725
+                        },
+                        {
+                            "word": "संसद",
+                            "offset": "PT3.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 38000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 3800,
+                            "confidence": 0.85336936
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT4.28S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 42800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 4280,
+                            "confidence": 0.95401967
+                        },
+                        {
+                            "word": "विपक्ष",
+                            "offset": "PT4.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 45200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 4520,
+                            "confidence": 0.9346737
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT5.04S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 50400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 5040,
+                            "confidence": 0.9011538
+                        },
+                        {
+                            "word": "इस",
+                            "offset": "PT5.32S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 53200000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 5320,
+                            "confidence": 0.9293908
+                        },
+                        {
+                            "word": "बार",
+                            "offset": "PT5.52S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 55200000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 5520,
+                            "confidence": 0.9215108
+                        },
+                        {
+                            "word": "चर्चा",
+                            "offset": "PT5.84S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 58400000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 5840,
+                            "confidence": 0.88157725
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.2S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 62000000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 6200,
+                            "confidence": 0.92894834
+                        },
+                        {
+                            "word": "मांग",
+                            "offset": "PT6.32S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 63200000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 6320,
+                            "confidence": 0.9448647
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.56S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 65600000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6560,
+                            "confidence": 0.7036306
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT6.72S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 67200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6720,
+                            "confidence": 0.8794269
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT6.96S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 69600000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 6960,
+                            "confidence": 0.9463206
+                        },
+                        {
+                            "word": "आने",
+                            "offset": "PT7.4S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 74000000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7400,
+                            "confidence": 0.94339573
+                        },
+                        {
+                            "word": "के",
+                            "offset": "PT7.64S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 76400000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 7640,
+                            "confidence": 0.9583868
+                        },
+                        {
+                            "word": "बाद",
+                            "offset": "PT7.76S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 77600000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7760,
+                            "confidence": 0.9619863
+                        },
+                        {
+                            "word": "गौतम",
+                            "offset": "PT8S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 80000000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 8000,
+                            "confidence": 0.80631626
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT8.36S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 83600000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 8360,
+                            "confidence": 0.39654812
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT8.68S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 86800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 8680,
+                            "confidence": 0.8220371
+                        },
+                        {
+                            "word": "कंपनी",
+                            "offset": "PT8.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 88000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 8800,
+                            "confidence": 0.78224635
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT9.28S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 92800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 9280,
+                            "confidence": 0.4590016
+                        },
+                        {
+                            "word": "इंटरप्राइसेस",
+                            "offset": "PT9.68S",
+                            "duration": "PT0.72S",
+                            "offsetInTicks": 96800000.0,
+                            "durationInTicks": 7200000.0,
+                            "durationMilliseconds": 720,
+                            "offsetMilliseconds": 9680,
+                            "confidence": 0.67460185
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT10.4S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 104000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 10400,
+                            "confidence": 0.85968304
+                        },
+                        {
+                            "word": "ऐफ़",
+                            "offset": "PT10.68S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 106800000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 10680,
+                            "confidence": 0.46855608
+                        },
+                        {
+                            "word": "पी",
+                            "offset": "PT10.88S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 108800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 10880,
+                            "confidence": 0.51813316
+                        },
+                        {
+                            "word": "ओह",
+                            "offset": "PT11.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 111200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 11120,
+                            "confidence": 0.3573
+                        },
+                        {
+                            "word": "यानी",
+                            "offset": "PT11.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 112400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 11240,
+                            "confidence": 0.56214315
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT11.52S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 115200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 11520,
+                            "confidence": 0.1710427
+                        },
+                        {
+                            "word": "फॉलो",
+                            "offset": "PT11.68S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 116800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 11680,
+                            "confidence": 0.31092146
+                        },
+                        {
+                            "word": "ऑन",
+                            "offset": "PT12.08S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 120800000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 12080,
+                            "confidence": 0.4459284
+                        },
+                        {
+                            "word": "पब्लिक",
+                            "offset": "PT12.24S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 122400000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 12240,
+                            "confidence": 0.82159144
+                        },
+                        {
+                            "word": "ऑफर",
+                            "offset": "PT12.68S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 126800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 12680,
+                            "confidence": 0.83747303
+                        },
+                        {
+                            "word": "को",
+                            "offset": "PT13S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 130000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13000,
+                            "confidence": 0.9541851
+                        },
+                        {
+                            "word": "कॉल",
+                            "offset": "PT13.28S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 132800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 13280,
+                            "confidence": 0.9430792
+                        },
+                        {
+                            "word": "ऑफ",
+                            "offset": "PT13.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 136000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 13600,
+                            "confidence": 0.8931645
+                        },
+                        {
+                            "word": "करने",
+                            "offset": "PT13.8S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 138000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13800,
+                            "confidence": 0.9521847
+                        },
+                        {
+                            "word": "का",
+                            "offset": "PT14.08S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 140800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 14080,
+                            "confidence": 0.9172999
+                        },
+                        {
+                            "word": "निर्णय",
+                            "offset": "PT14.2S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 142000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 14200,
+                            "confidence": 0.884256
+                        },
+                        {
+                            "word": "लिया",
+                            "offset": "PT14.48S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 144800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 14480,
+                            "confidence": 0.8946417
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT14.72S",
+                            "duration": "PT0.08S",
+                            "offsetInTicks": 147200000.0,
+                            "durationInTicks": 800000.0,
+                            "durationMilliseconds": 80,
+                            "offsetMilliseconds": 14720,
+                            "confidence": 0.8155566
+                        }
+                    ]
+                },
+                {
+                    "confidence": 0.72443277,
+                    "lexical": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाडी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "itn": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाडी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "maskedITN": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाडी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "display": "हिंडेनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाडी इंटरप्राइसेस ने ऐफ़ पी ओह यानी की फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "words": [
+                        {
+                            "word": "हिंडेनबर्ग",
+                            "offset": "PT0.24S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 2400000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 240,
+                            "confidence": 0.19898187
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT0.76S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 7600000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 760,
+                            "confidence": 0.8875752
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT1.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 12400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 1240,
+                            "confidence": 0.9401711
+                        },
+                        {
+                            "word": "देशभर",
+                            "offset": "PT1.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 15200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 1520,
+                            "confidence": 0.45925328
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT2.04S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 20400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 2040,
+                            "confidence": 0.96292835
+                        },
+                        {
+                            "word": "सबको",
+                            "offset": "PT2.2S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 22000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 2200,
+                            "confidence": 0.5073685
+                        },
+                        {
+                            "word": "सकते",
+                            "offset": "PT2.68S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 26800000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 2680,
+                            "confidence": 0.12110494
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT3.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 31200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 3120,
+                            "confidence": 0.45510846
+                        },
+                        {
+                            "word": "ला",
+                            "offset": "PT3.24S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 32400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 3240,
+                            "confidence": 0.24384412
+                        },
+                        {
+                            "word": "दिया",
+                            "offset": "PT3.4S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 34000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3400,
+                            "confidence": 0.72264487
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT3.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 36000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3600,
+                            "confidence": 0.90269476
+                        },
+                        {
+                            "word": "संसद",
+                            "offset": "PT3.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 38000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 3800,
+                            "confidence": 0.85664284
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT4.28S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 42800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 4280,
+                            "confidence": 0.9571394
+                        },
+                        {
+                            "word": "विपक्ष",
+                            "offset": "PT4.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 45200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 4520,
+                            "confidence": 0.9335996
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT5.04S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 50400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 5040,
+                            "confidence": 0.9015297
+                        },
+                        {
+                            "word": "इस",
+                            "offset": "PT5.32S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 53200000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 5320,
+                            "confidence": 0.927114
+                        },
+                        {
+                            "word": "बार",
+                            "offset": "PT5.52S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 55200000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 5520,
+                            "confidence": 0.924931
+                        },
+                        {
+                            "word": "चर्चा",
+                            "offset": "PT5.84S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 58400000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 5840,
+                            "confidence": 0.88963425
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.2S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 62000000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 6200,
+                            "confidence": 0.927227
+                        },
+                        {
+                            "word": "मांग",
+                            "offset": "PT6.32S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 63200000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 6320,
+                            "confidence": 0.9452693
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.56S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 65600000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6560,
+                            "confidence": 0.70272344
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT6.72S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 67200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6720,
+                            "confidence": 0.87650573
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT6.96S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 69600000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 6960,
+                            "confidence": 0.9477192
+                        },
+                        {
+                            "word": "आने",
+                            "offset": "PT7.4S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 74000000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7400,
+                            "confidence": 0.9445935
+                        },
+                        {
+                            "word": "के",
+                            "offset": "PT7.64S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 76400000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 7640,
+                            "confidence": 0.9582287
+                        },
+                        {
+                            "word": "बाद",
+                            "offset": "PT7.76S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 77600000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7760,
+                            "confidence": 0.9625149
+                        },
+                        {
+                            "word": "गौतम",
+                            "offset": "PT8S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 80000000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 8000,
+                            "confidence": 0.79722583
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT8.36S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 83600000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 8360,
+                            "confidence": 0.4127495
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT8.68S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 86800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 8680,
+                            "confidence": 0.82374233
+                        },
+                        {
+                            "word": "कंपनी",
+                            "offset": "PT8.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 88000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 8800,
+                            "confidence": 0.7819127
+                        },
+                        {
+                            "word": "अडाडी",
+                            "offset": "PT9.28S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 92800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 9280,
+                            "confidence": 0.056565475
+                        },
+                        {
+                            "word": "इंटरप्राइसेस",
+                            "offset": "PT9.68S",
+                            "duration": "PT0.72S",
+                            "offsetInTicks": 96800000.0,
+                            "durationInTicks": 7200000.0,
+                            "durationMilliseconds": 720,
+                            "offsetMilliseconds": 9680,
+                            "confidence": 0.67744714
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT10.4S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 104000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 10400,
+                            "confidence": 0.8600706
+                        },
+                        {
+                            "word": "ऐफ़",
+                            "offset": "PT10.68S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 106800000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 10680,
+                            "confidence": 0.47936085
+                        },
+                        {
+                            "word": "पी",
+                            "offset": "PT10.88S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 108800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 10880,
+                            "confidence": 0.52381486
+                        },
+                        {
+                            "word": "ओह",
+                            "offset": "PT11.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 111200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 11120,
+                            "confidence": 0.36705342
+                        },
+                        {
+                            "word": "यानी",
+                            "offset": "PT11.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 112400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 11240,
+                            "confidence": 0.5658472
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT11.52S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 115200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 11520,
+                            "confidence": 0.16975324
+                        },
+                        {
+                            "word": "फॉलो",
+                            "offset": "PT11.68S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 116800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 11680,
+                            "confidence": 0.31705678
+                        },
+                        {
+                            "word": "ऑन",
+                            "offset": "PT12.08S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 120800000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 12080,
+                            "confidence": 0.41340303
+                        },
+                        {
+                            "word": "पब्लिक",
+                            "offset": "PT12.24S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 122400000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 12240,
+                            "confidence": 0.82560456
+                        },
+                        {
+                            "word": "ऑफर",
+                            "offset": "PT12.68S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 126800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 12680,
+                            "confidence": 0.8385818
+                        },
+                        {
+                            "word": "को",
+                            "offset": "PT13S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 130000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13000,
+                            "confidence": 0.95261896
+                        },
+                        {
+                            "word": "कॉल",
+                            "offset": "PT13.28S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 132800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 13280,
+                            "confidence": 0.9433522
+                        },
+                        {
+                            "word": "ऑफ",
+                            "offset": "PT13.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 136000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 13600,
+                            "confidence": 0.89417464
+                        },
+                        {
+                            "word": "करने",
+                            "offset": "PT13.8S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 138000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13800,
+                            "confidence": 0.95230436
+                        },
+                        {
+                            "word": "का",
+                            "offset": "PT14.08S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 140800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 14080,
+                            "confidence": 0.9189118
+                        },
+                        {
+                            "word": "निर्णय",
+                            "offset": "PT14.2S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 142000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 14200,
+                            "confidence": 0.87947613
+                        },
+                        {
+                            "word": "लिया",
+                            "offset": "PT14.48S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 144800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 14480,
+                            "confidence": 0.89484584
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT14.72S",
+                            "duration": "PT0.08S",
+                            "offsetInTicks": 147200000.0,
+                            "durationInTicks": 800000.0,
+                            "durationMilliseconds": 80,
+                            "offsetMilliseconds": 14720,
+                            "confidence": 0.81871605
+                        }
+                    ]
+                },
+                {
+                    "confidence": 0.7295203,
+                    "lexical": "हिंडनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी कि फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "itn": "हिंडनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी कि फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "maskedITN": "हिंडनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी कि फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "display": "हिंडनबर्ग रिपोर्ट में देशभर में सबको सकते में ला दिया है संसद में विपक्ष ने इस बार चर्चा की मांग की है रिपोर्ट आने के बाद गौतम अडाड़ी की कंपनी अडाड़ी इंटरप्राइसेस ने ऐफ़ पी ओह यानी कि फॉलो ऑन पब्लिक ऑफर को कॉल ऑफ करने का निर्णय लिया है",
+                    "words": [
+                        {
+                            "word": "हिंडनबर्ग",
+                            "offset": "PT0.24S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 2400000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 240,
+                            "confidence": 0.15249626
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT0.76S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 7600000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 760,
+                            "confidence": 0.8851203
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT1.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 12400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 1240,
+                            "confidence": 0.93827224
+                        },
+                        {
+                            "word": "देशभर",
+                            "offset": "PT1.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 15200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 1520,
+                            "confidence": 0.47232372
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT2.04S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 20400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 2040,
+                            "confidence": 0.9623506
+                        },
+                        {
+                            "word": "सबको",
+                            "offset": "PT2.2S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 22000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 2200,
+                            "confidence": 0.50143856
+                        },
+                        {
+                            "word": "सकते",
+                            "offset": "PT2.68S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 26800000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 2680,
+                            "confidence": 0.12076017
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT3.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 31200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 3120,
+                            "confidence": 0.46212104
+                        },
+                        {
+                            "word": "ला",
+                            "offset": "PT3.24S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 32400000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 3240,
+                            "confidence": 0.22001514
+                        },
+                        {
+                            "word": "दिया",
+                            "offset": "PT3.4S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 34000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3400,
+                            "confidence": 0.72484446
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT3.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 36000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 3600,
+                            "confidence": 0.9025725
+                        },
+                        {
+                            "word": "संसद",
+                            "offset": "PT3.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 38000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 3800,
+                            "confidence": 0.85336936
+                        },
+                        {
+                            "word": "में",
+                            "offset": "PT4.28S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 42800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 4280,
+                            "confidence": 0.95401967
+                        },
+                        {
+                            "word": "विपक्ष",
+                            "offset": "PT4.52S",
+                            "duration": "PT0.52S",
+                            "offsetInTicks": 45200000.0,
+                            "durationInTicks": 5200000.0,
+                            "durationMilliseconds": 520,
+                            "offsetMilliseconds": 4520,
+                            "confidence": 0.9346737
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT5.04S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 50400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 5040,
+                            "confidence": 0.9011538
+                        },
+                        {
+                            "word": "इस",
+                            "offset": "PT5.32S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 53200000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 5320,
+                            "confidence": 0.9293908
+                        },
+                        {
+                            "word": "बार",
+                            "offset": "PT5.52S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 55200000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 5520,
+                            "confidence": 0.9215108
+                        },
+                        {
+                            "word": "चर्चा",
+                            "offset": "PT5.84S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 58400000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 5840,
+                            "confidence": 0.88157725
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.2S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 62000000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 6200,
+                            "confidence": 0.92894834
+                        },
+                        {
+                            "word": "मांग",
+                            "offset": "PT6.32S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 63200000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 6320,
+                            "confidence": 0.9448647
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT6.56S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 65600000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6560,
+                            "confidence": 0.7036306
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT6.72S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 67200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 6720,
+                            "confidence": 0.8794269
+                        },
+                        {
+                            "word": "रिपोर्ट",
+                            "offset": "PT6.96S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 69600000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 6960,
+                            "confidence": 0.9463206
+                        },
+                        {
+                            "word": "आने",
+                            "offset": "PT7.4S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 74000000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7400,
+                            "confidence": 0.94339573
+                        },
+                        {
+                            "word": "के",
+                            "offset": "PT7.64S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 76400000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 7640,
+                            "confidence": 0.9583868
+                        },
+                        {
+                            "word": "बाद",
+                            "offset": "PT7.76S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 77600000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 7760,
+                            "confidence": 0.9619863
+                        },
+                        {
+                            "word": "गौतम",
+                            "offset": "PT8S",
+                            "duration": "PT0.36S",
+                            "offsetInTicks": 80000000.0,
+                            "durationInTicks": 3600000.0,
+                            "durationMilliseconds": 360,
+                            "offsetMilliseconds": 8000,
+                            "confidence": 0.80631626
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT8.36S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 83600000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 8360,
+                            "confidence": 0.39654812
+                        },
+                        {
+                            "word": "की",
+                            "offset": "PT8.68S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 86800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 8680,
+                            "confidence": 0.8220371
+                        },
+                        {
+                            "word": "कंपनी",
+                            "offset": "PT8.8S",
+                            "duration": "PT0.48S",
+                            "offsetInTicks": 88000000.0,
+                            "durationInTicks": 4800000.0,
+                            "durationMilliseconds": 480,
+                            "offsetMilliseconds": 8800,
+                            "confidence": 0.78224635
+                        },
+                        {
+                            "word": "अडाड़ी",
+                            "offset": "PT9.28S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 92800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 9280,
+                            "confidence": 0.4590016
+                        },
+                        {
+                            "word": "इंटरप्राइसेस",
+                            "offset": "PT9.68S",
+                            "duration": "PT0.72S",
+                            "offsetInTicks": 96800000.0,
+                            "durationInTicks": 7200000.0,
+                            "durationMilliseconds": 720,
+                            "offsetMilliseconds": 9680,
+                            "confidence": 0.67460185
+                        },
+                        {
+                            "word": "ने",
+                            "offset": "PT10.4S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 104000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 10400,
+                            "confidence": 0.85968304
+                        },
+                        {
+                            "word": "ऐफ़",
+                            "offset": "PT10.68S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 106800000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 10680,
+                            "confidence": 0.46855608
+                        },
+                        {
+                            "word": "पी",
+                            "offset": "PT10.88S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 108800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 10880,
+                            "confidence": 0.51813316
+                        },
+                        {
+                            "word": "ओह",
+                            "offset": "PT11.12S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 111200000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 11120,
+                            "confidence": 0.3573
+                        },
+                        {
+                            "word": "यानी",
+                            "offset": "PT11.24S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 112400000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 11240,
+                            "confidence": 0.56214315
+                        },
+                        {
+                            "word": "कि",
+                            "offset": "PT11.52S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 115200000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 11520,
+                            "confidence": 0.11930708
+                        },
+                        {
+                            "word": "फॉलो",
+                            "offset": "PT11.68S",
+                            "duration": "PT0.4S",
+                            "offsetInTicks": 116800000.0,
+                            "durationInTicks": 4000000.0,
+                            "durationMilliseconds": 400,
+                            "offsetMilliseconds": 11680,
+                            "confidence": 0.25055745
+                        },
+                        {
+                            "word": "ऑन",
+                            "offset": "PT12.08S",
+                            "duration": "PT0.16S",
+                            "offsetInTicks": 120800000.0,
+                            "durationInTicks": 1600000.0,
+                            "durationMilliseconds": 160,
+                            "offsetMilliseconds": 12080,
+                            "confidence": 0.48755947
+                        },
+                        {
+                            "word": "पब्लिक",
+                            "offset": "PT12.24S",
+                            "duration": "PT0.44S",
+                            "offsetInTicks": 122400000.0,
+                            "durationInTicks": 4400000.0,
+                            "durationMilliseconds": 440,
+                            "offsetMilliseconds": 12240,
+                            "confidence": 0.82310873
+                        },
+                        {
+                            "word": "ऑफर",
+                            "offset": "PT12.68S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 126800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 12680,
+                            "confidence": 0.8450816
+                        },
+                        {
+                            "word": "को",
+                            "offset": "PT13S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 130000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13000,
+                            "confidence": 0.9536866
+                        },
+                        {
+                            "word": "कॉल",
+                            "offset": "PT13.28S",
+                            "duration": "PT0.32S",
+                            "offsetInTicks": 132800000.0,
+                            "durationInTicks": 3200000.0,
+                            "durationMilliseconds": 320,
+                            "offsetMilliseconds": 13280,
+                            "confidence": 0.9436588
+                        },
+                        {
+                            "word": "ऑफ",
+                            "offset": "PT13.6S",
+                            "duration": "PT0.2S",
+                            "offsetInTicks": 136000000.0,
+                            "durationInTicks": 2000000.0,
+                            "durationMilliseconds": 200,
+                            "offsetMilliseconds": 13600,
+                            "confidence": 0.8953158
+                        },
+                        {
+                            "word": "करने",
+                            "offset": "PT13.8S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 138000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 13800,
+                            "confidence": 0.95132446
+                        },
+                        {
+                            "word": "का",
+                            "offset": "PT14.08S",
+                            "duration": "PT0.12S",
+                            "offsetInTicks": 140800000.0,
+                            "durationInTicks": 1200000.0,
+                            "durationMilliseconds": 120,
+                            "offsetMilliseconds": 14080,
+                            "confidence": 0.90937114
+                        },
+                        {
+                            "word": "निर्णय",
+                            "offset": "PT14.2S",
+                            "duration": "PT0.28S",
+                            "offsetInTicks": 142000000.0,
+                            "durationInTicks": 2800000.0,
+                            "durationMilliseconds": 280,
+                            "offsetMilliseconds": 14200,
+                            "confidence": 0.885075
+                        },
+                        {
+                            "word": "लिया",
+                            "offset": "PT14.48S",
+                            "duration": "PT0.24S",
+                            "offsetInTicks": 144800000.0,
+                            "durationInTicks": 2400000.0,
+                            "durationMilliseconds": 240,
+                            "offsetMilliseconds": 14480,
+                            "confidence": 0.8995812
+                        },
+                        {
+                            "word": "है",
+                            "offset": "PT14.72S",
+                            "duration": "PT0.08S",
+                            "offsetInTicks": 147200000.0,
+                            "durationInTicks": 800000.0,
+                            "durationMilliseconds": 80,
+                            "offsetMilliseconds": 14720,
+                            "confidence": 0.8208529
+                        }
+                    ]
+                }
+            ],
+            "locale": "hi-IN"
+        }
+    ]
+}

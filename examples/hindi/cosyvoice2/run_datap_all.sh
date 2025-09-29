@@ -1,0 +1,3 @@
+bash run_datap.sh /data/liangyunming/tts_20250618/CosyVoice/examples/hindi/cosyvoice2/filelists/bbc07230902_yoyo0904/thres300 datas/bbc07230902_yoyo0904_thres300
+bash run_datap.sh /data/liangyunming/tts_20250618/CosyVoice/examples/hindi/cosyvoice2/filelists/bbc07230902_yoyo0904/thres480 datas/bbc07230902_yoyo0904_thres480
+bash run_datap.sh /data/liangyunming/tts_20250618/CosyVoice/examples/hindi/cosyvoice2/filelists/bbc07230902_yoyo0904/thres600 datas/bbc07230902_yoyo0904_thres600

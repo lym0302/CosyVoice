@@ -13,10 +13,12 @@ def main():
     with open(args.src_dir, 'r', encoding='utf-8') as fr:
         for line in tqdm(fr.readlines()):
             line_list = line.strip().split("\t")
-            if len(line_list) != 4:
+            # if len(line_list) != 4:
+            if len(line_list) != 5:
                 print(line_list)
                 continue
-            wav, spk, content, asr_conf = line_list
+            # wav, spk, content, asr_conf = line_list
+            wav, spk, content, dur, asr_conf = line_list
             
             utt = spk + "_" + os.path.basename(wav).replace('.wav', '')
             spk = utt.split('_')[0]

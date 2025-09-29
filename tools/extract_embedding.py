@@ -20,9 +20,23 @@ import torchaudio
 import torchaudio.compliance.kaldi as kaldi
 from tqdm import tqdm
 
+import io
+import torchaudio
+from urllib.request import urlopen
 
 def single_job(utt):
-    audio, sample_rate = torchaudio.load(utt2wav[utt])
+    audio_path = utt2wav[utt]
+    if audio_path.startswith(('http://', 'https://')):  # 如果是url
+        try:
+            with urlopen(audio_path) as response:
+                audio_bytes = response.read()
+            audio_file_like = io.BytesIO(audio_bytes)
+            audio, sample_rate = torchaudio.load(audio_file_like)
+        except Exception as e:
+            raise Exception(f"无法下载或处理远程音频文件 {audio_path}: {e}")
+    else:   
+        audio, sample_rate = torchaudio.load(audio_path)
+        
     if sample_rate != 16000:
         audio = torchaudio.transforms.Resample(orig_freq=sample_rate, new_freq=16000)(audio)
     feat = kaldi.fbank(audio,
@@ -31,6 +45,7 @@ def single_job(utt):
                        sample_frequency=16000)
     feat = feat - feat.mean(dim=0, keepdim=True)
     embedding = ort_session.run(None, {ort_session.get_inputs()[0].name: feat.unsqueeze(dim=0).cpu().numpy()})[0].flatten().tolist()
+
     return utt, embedding
 
 
@@ -65,6 +80,9 @@ if __name__ == "__main__":
     with open('{}/utt2spk'.format(args.dir)) as f:
         for l in f:
             l = l.replace('\n', '').split()
+            if len(l) != 2:
+                print("222222222222: ", l)
+                break
             utt2spk[l[0]] = l[1]
 
     option = onnxruntime.SessionOptions()

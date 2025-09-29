@@ -21,13 +21,23 @@ import pandas as pd
 import multiprocessing
 import time
 import torch
+from urllib.request import urlopen
 
 
 def job(utt_list, parquet_file, utt2parquet_file, spk2parquet_file):
     start_time = time.time()
     data_list = []
     for utt in tqdm(utt_list):
-        data = open(utt2wav[utt], 'rb').read()
+        audio_path = utt2wav[utt]
+        if audio_path.startswith(('http://', 'https://')):  # 如果是url
+            try:
+                with urlopen(audio_path) as response:
+                    data = response.read()
+            except Exception as e:
+                raise Exception(f"无法下载或处理远程音频文件 {audio_path}: {e}")
+        else:
+            data = open(audio_path, 'rb').read()
+            
         data_list.append(data)
     wav_list = [utt2wav[utt] for utt in utt_list]
     text_list = [utt2text[utt] for utt in utt_list]
